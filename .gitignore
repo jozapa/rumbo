@@ -1,0 +1,7 @@
+# Personal, machine-specific Claude Code files
+CLAUDE.local.md
+settings.local.json
+.claude
+
+# Private planning documents - never in a public repo
+12-plan-rumbo.html
