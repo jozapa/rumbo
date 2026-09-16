@@ -5,3 +5,26 @@ settings.local.json
 
 # Private planning documents - never in a public repo
 12-plan-rumbo.html
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+
+# Node
+node_modules/
+dist/
+
+# Local environment
+.env
+
+# Terraform
+.terraform/
+*.tfstate*
+*.tfplan
+*.auto.tfvars
+
+# Never commit anything real here
+fixtures/private/

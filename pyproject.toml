@@ -1,0 +1,23 @@
+[project]
+name = "rumbo-workspace"
+version = "0.0.0"
+requires-python = ">=3.13"
+
+[tool.uv.workspace]
+members = ["agent", "backend", "tools/datagen"]
+
+[dependency-groups]
+dev = ["ruff", "pyright", "pytest", "pytest-asyncio", "import-linter", "httpx2"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py313"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "S", "ASYNC", "DTZ", "RUF"]
+
+[tool.ruff.lint.per-file-ignores]
+"**/tests/**" = ["S101"]
+
+[tool.pytest.ini_options]
+addopts = "--import-mode=importlib"
