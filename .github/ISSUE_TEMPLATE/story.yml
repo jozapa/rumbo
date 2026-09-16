@@ -1,0 +1,52 @@
+name: Story
+description: A RUM ticket - a piece of work with a clear, testable outcome.
+title: "RUM-XXX · "
+labels: []
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: One sentence - the outcome when this is done.
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Why it matters and what it unblocks. Link ADRs or files in the repo when relevant.
+    validations:
+      required: false
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance criteria
+      description: One checkbox per criterion. Each must be verifiable by a command, a test, a CI run or a screenshot.
+      value: |
+        - [ ]
+    validations:
+      required: true
+
+  - type: textarea
+    id: out-of-scope
+    attributes:
+      label: Out of scope
+      description: What this ticket deliberately does not do.
+    validations:
+      required: false
+
+  - type: input
+    id: estimate
+    attributes:
+      label: Estimate (hours)
+    validations:
+      required: false
+
+  - type: input
+    id: sprint
+    attributes:
+      label: Sprint
+    validations:
+      required: false
